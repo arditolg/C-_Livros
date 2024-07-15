@@ -9,6 +9,7 @@ public class AppDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseMySQL("sua-string-de-conexao-mysql");
+        optionsBuilder.UseMySQL("server=localhost;database=livros;user=root;password=;");
+
     }
 }
